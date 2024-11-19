@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+button {
+    padding: 12px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover {
+    background-color: #d5d8dc;
+}
+
+.summary {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+button.edit {
+    background-color: #3498db;
+}
+
+button.edit:hover {
+    background-color: #2980b9;
+}
+
+#historySection {
+    margin-top: 20px;
+    float: left;
+    width: 250px; /* Adjust the width as needed */
+}
+
+#historyList li {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.custom-select {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.styled-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.styled-select:hover {
+    border-color: #3498db;
+}
+
+.styled-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+
+
+
+
+
+
+
+

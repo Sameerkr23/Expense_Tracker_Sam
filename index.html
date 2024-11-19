@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <div class="section" id="incomeSection">
+            <h2>Income</h2>
+            <form id="incomeForm">
+                <label for="incomeDate">Date:</label>
+                <input type="date" id="incomeDate" required>
+                <label for="incomeDescription">Description:</label>
+                <input type="text" id="incomeDescription" required>
+                <label for="incomeCategory">Category:</label>
+                <div class="select-wrapper">
+                    <select id="incomeCategory" class="styled-select">
+                        <option value="selectOption" disabled selected>Select Option</option>
+                        <option value="salary">Salary</option>
+                        <option value="freelancing">Freelancing</option>
+                        <option value="investments">Investments</option>
+                        <option value="stocks">Stocks</option>
+                        <option value="bitcoin">Bitcoin</option>
+                        <option value="bankTransfer">Bank Transfer</option>
+                        <option value="youtube">YouTube</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <label for="incomeAmount">Amount:</label>
+                <input type="number" id="incomeAmount" required>
+                <button type="button" onclick="addIncome()">Add Income</button>
+            </form>
+            <ul id="incomeList"></ul>
+        </div>
+
+
+        <div class="section" id="expensesSection">
+            <h2>Expenses</h2>
+            <form id="expenseForm">
+                <label for="expenseDate">Date:</label>
+                <input type="date" id="expenseDate" required>
+                <label for="expenseDescription">Description:</label>
+                <input type="text" id="expenseDescription" required>
+                <label for="expenseCategory">Category:</label>
+                <div class="select-wrapper">
+                    <select id="expenseCategory" class="styled-select">
+                        <option value="selectOption" disabled selected>Select Option</option>
+                        <option value="education">Education</option>
+                        <option value="groceries">Groceries</option>
+                        <option value="health">Health</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="food">Food</option>
+                        <option value="travelling">Traveling</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <label for="expenseAmount">Amount:</label>
+                <input type="number" id="expenseAmount" required>
+                <button type="button" onclick="addExpense()">Add Expense</button>
+            </form>
+            <ul id="expenseList"></ul>
+        </div>
+
+
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Total Income: <span id="totalIncome">0</span></p>
+            <p>Total Expenses: <span id="totalExpenses">0</span></p>
+            <p>Net Income: <span id="netIncome">0</span></p>
+        </div>
+        <div class="section" id="historySection">
+            <h2>Transaction History</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
